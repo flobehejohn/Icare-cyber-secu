@@ -55,3 +55,13 @@ Commandes utiles dans Icare :
 ## Sécurité
 
 Ce dépôt est un laboratoire pédagogique. Les scripts d'injection doivent être utilisés uniquement sur 127.0.0.1, en VM, ou sur un réseau explicitement autorisé.
+
+## Certification locale BEUI2
+
+    sudo apt install -y tcpdump netcat-openbsd
+    bash scripts/quality/certify-beui2-local.sh
+
+Cette commande valide la chaîne : Icare -> beui2 -> UDP 9999 -> tcpdump -> injection locale -> preuve audit.
+
+Les preuves sont générées dans audit/_latest/beui2-<timestamp>/.
+\n
