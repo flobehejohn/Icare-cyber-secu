@@ -1,0 +1,8 @@
+icare
+*.o
+*.a
+*.so
+*.dSYM/
+audit/_latest/
+*.pcap
+*.pcapng

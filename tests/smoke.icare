@@ -1,0 +1,5 @@
+pwd
+vers
+echo Programme_OK
+cd /tmp ; pwd ; echo Test_OK
+exit
