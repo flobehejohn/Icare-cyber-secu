@@ -1,0 +1,38 @@
+{
+  "labId": "icare-sentinel-lab",
+  "name": "Icare Sentinel Lab",
+  "version": "0.1.0",
+  "kind": "runtime-network-evidence-provider",
+  "visibility": "public",
+  "doctrineCompatibility": {
+    "drepsVersion": "0.1.0",
+    "providerKind": "runtime-network-security",
+    "compatibilityTarget": "doctrine-platform/runtime-evidence-provider@0.1.0"
+  },
+  "scope": {
+    "educational": true,
+    "productionTarget": false,
+    "premiumFeatures": false,
+    "domains": [
+      "C",
+      "Linux",
+      "UDP sockets",
+      "network capture",
+      "controlled injection reasoning",
+      "runtime evidence"
+    ]
+  },
+  "publicCapabilities": {
+    "exportDreps": true,
+    "localValidation": true,
+    "localReport": true,
+    "sha256Manifest": true,
+    "basicGoldenPath": true,
+    "cleanRoomFriendly": true,
+    "premiumScoring": false,
+    "officialDoctrineCertification": false,
+    "keylessSigning": false,
+    "wormArchive": false,
+    "enterpriseDashboard": false
+  }
+}

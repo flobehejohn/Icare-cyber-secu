@@ -1,0 +1,27 @@
+{
+  "id": "golden-path.icare.beui2-runtime-network",
+  "title": "BEUI2 Runtime Network Evidence Baseline",
+  "version": "0.1.0",
+  "objective": "Provide a reproducible public baseline for observing, documenting and exporting network/runtime evidence from the Icare BEUI2 educational lab.",
+  "requiredEvidence": [
+    "lab-context",
+    "runtime-events",
+    "findings",
+    "control-mapping",
+    "sha256-manifest",
+    "markdown-report",
+    "html-report"
+  ],
+  "recommendedPractices": [
+    "Declare the scenario and its security scope",
+    "Separate naive behavior from hardened behavior",
+    "Capture runtime events without exposing secrets",
+    "Hash all exported artifacts",
+    "Generate a deterministic example pack for CI",
+    "Avoid pretending to provide official Doctrine certification from the public lab"
+  ],
+  "doctrineBoundary": {
+    "labResponsibility": "Produce valid DREPS evidence packs.",
+    "platformResponsibility": "Ingest, score, compare, package, seal, sign and govern evidence packs."
+  }
+}

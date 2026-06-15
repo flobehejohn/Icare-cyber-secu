@@ -1,0 +1,64 @@
+name: Icare DREPS Export
+
+on:
+  push:
+    paths:
+      - ".doctrine/**"
+      - "docs/**"
+      - "scripts/**"
+      - ".github/workflows/dreps-export.yml"
+      - "src/**"
+      - "include/**"
+      - "Makefile"
+      - "CMakeLists.txt"
+      - "README.md"
+  pull_request:
+    paths:
+      - ".doctrine/**"
+      - "docs/**"
+      - "scripts/**"
+      - ".github/workflows/dreps-export.yml"
+      - "src/**"
+      - "include/**"
+      - "Makefile"
+      - "CMakeLists.txt"
+      - "README.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dreps-export:
+    name: Export Icare DREPS evidence pack
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Generate deterministic example
+        run: |
+          node scripts/dreps/export-dreps.mjs --out examples/dreps --deterministic
+          node scripts/dreps/validate-dreps.mjs examples/dreps/evidence-pack.json
+
+      - name: Validate full public lab boundary
+        run: bash scripts/validate-lab.sh
+
+      - name: Generate local lab audit
+        run: bash scripts/icare-lab-audit.sh
+
+      - name: Upload DREPS artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: icare-dreps-export
+          path: |
+            audit/_latest/icare-*/
+            examples/dreps/
+          if-no-files-found: warn

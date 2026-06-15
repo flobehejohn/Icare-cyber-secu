@@ -1,0 +1,15 @@
+[
+  {
+    "id": "BEUI2-NET-001",
+    "title": "UDP runtime protocol injection surface documented by the lab",
+    "status": "confirmed",
+    "severity": "medium",
+    "statement": "The lab documents a local UDP/protocol risk hypothesis suitable for controlled runtime observation and hardening discussion.",
+    "evidenceArtifactIds": [
+      "artifact.runtime-events",
+      "artifact.findings",
+      "artifact.lab-report"
+    ],
+    "recommendation": "Keep the exercise local, document naive versus hardened behavior, and export runtime evidence after each scenario run."
+  }
+]
