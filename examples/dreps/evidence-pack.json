@@ -1,0 +1,290 @@
+{
+  "drepsVersion": "0.1.0",
+  "evidencePackId": "icare-beui2-runtime-network-pack",
+  "provider": {
+    "id": "icare-sentinel-lab",
+    "name": "Icare Sentinel Lab",
+    "version": "0.1.0",
+    "kind": "runtime-network-security"
+  },
+  "scenario": {
+    "id": "icare.beui2.udp.runtime-network-reference",
+    "title": "BEUI2 UDP Runtime Network Reference",
+    "version": "0.1.0",
+    "objective": "Produce public Doctrine-compatible runtime evidence for the Icare BEUI2 UDP educational cybersecurity lab.",
+    "reproducibility": "deterministic",
+    "entrypoint": "bash scripts/export-dreps.sh",
+    "expectedBehavior": "The lab exports runtime events, findings, reports and SHA-256 manifests without requiring premium Doctrine Platform features.",
+    "riskHypothesis": "A naive UDP protocol exercise can expose a controlled local injection/observation surface useful for cybersecurity education."
+  },
+  "execution": {
+    "runId": "icare-beui2-reference-run",
+    "startedAt": "2026-01-01T00:00:00.000Z",
+    "endedAt": "2026-01-01T00:00:00.000Z",
+    "status": "pass",
+    "environment": {
+      "platform": "linux",
+      "arch": "x64",
+      "node": "v22.15.0",
+      "hostname": "deterministic-host",
+      "git": {
+        "remote": "https://github.com/flobehejohn/Icare-cyber-secu.git",
+        "branch": "feat/icare-native-dreps-export-v0",
+        "commit": "a7a0fc5683939d3c805e70471e3b6165d121a920"
+      },
+      "mode": "deterministic-example"
+    }
+  },
+  "artifacts": [
+    {
+      "id": "artifact.source.readme-md",
+      "kind": "report",
+      "path": "artifacts/source/README.md",
+      "mediaType": "text/markdown",
+      "sha256": "f25127342f293dde1ab95b3f79b60ab24cb70118f828e1221dcc6d0032a2357d",
+      "sizeBytes": 1818,
+      "producedBy": "icare-dreps-export",
+      "description": "Copied source/context artifact for reproducible public lab evidence."
+    },
+    {
+      "id": "artifact.source.makefile",
+      "kind": "other",
+      "path": "artifacts/source/Makefile",
+      "mediaType": "application/octet-stream",
+      "sha256": "cfb779af5a86acf7861d7f95daa1455005893a5dfaf7aae6c0f9f12482190731",
+      "sizeBytes": 1310,
+      "producedBy": "icare-dreps-export",
+      "description": "Copied source/context artifact for reproducible public lab evidence."
+    },
+    {
+      "id": "artifact.source.lab-intent-md",
+      "kind": "report",
+      "path": "artifacts/source/docs/LAB_INTENT.md",
+      "mediaType": "text/markdown",
+      "sha256": "d757a43ae54ea953277869f04e86da6609586985d310b8b71d8aea5db694c3f7",
+      "sizeBytes": 868,
+      "producedBy": "icare-dreps-export",
+      "description": "Copied source/context artifact for reproducible public lab evidence."
+    },
+    {
+      "id": "artifact.source.threat-model-md",
+      "kind": "report",
+      "path": "artifacts/source/docs/THREAT_MODEL.md",
+      "mediaType": "text/markdown",
+      "sha256": "a07337cf8945a9160f393087ee779b76bc8768ba6d1211082be637dd35bfc920",
+      "sizeBytes": 484,
+      "producedBy": "icare-dreps-export",
+      "description": "Copied source/context artifact for reproducible public lab evidence."
+    },
+    {
+      "id": "artifact.source.doctrine-compatibility-md",
+      "kind": "report",
+      "path": "artifacts/source/docs/DOCTRINE_COMPATIBILITY.md",
+      "mediaType": "text/markdown",
+      "sha256": "6003709a67fdf489d01cc30ea474e50766651052103ff7345bc0be7ad5b07961",
+      "sizeBytes": 782,
+      "producedBy": "icare-dreps-export",
+      "description": "Copied source/context artifact for reproducible public lab evidence."
+    },
+    {
+      "id": "artifact.source.clean-room-mode-md",
+      "kind": "report",
+      "path": "artifacts/source/docs/CLEAN_ROOM_MODE.md",
+      "mediaType": "text/markdown",
+      "sha256": "241a5013bd2003b960d53d05a810bc7469cf7737713b8a59cfabf0211aa56350",
+      "sizeBytes": 455,
+      "producedBy": "icare-dreps-export",
+      "description": "Copied source/context artifact for reproducible public lab evidence."
+    },
+    {
+      "id": "artifact.source.lab-manifest-json",
+      "kind": "json",
+      "path": "artifacts/source/.doctrine/lab.manifest.json",
+      "mediaType": "application/json",
+      "sha256": "c573f6fe1b3336ee3e5cdec1098349fa5b4c19f15f821d6d0ca7147cba98f4c6",
+      "sizeBytes": 976,
+      "producedBy": "icare-dreps-export",
+      "description": "Copied source/context artifact for reproducible public lab evidence."
+    },
+    {
+      "id": "artifact.source.capabilities-json",
+      "kind": "json",
+      "path": "artifacts/source/.doctrine/capabilities.json",
+      "mediaType": "application/json",
+      "sha256": "08922931bf8586e16accbfdcaf424cd85e96b985ad465e134b8a9e9bbba192df",
+      "sizeBytes": 1075,
+      "producedBy": "icare-dreps-export",
+      "description": "Copied source/context artifact for reproducible public lab evidence."
+    },
+    {
+      "id": "artifact.source.beui2-runtime-network-golden-path-json",
+      "kind": "json",
+      "path": "artifacts/source/.doctrine/golden-paths/beui2-runtime-network.golden-path.json",
+      "mediaType": "application/json",
+      "sha256": "1f22c295f9f67f071f54b3e22e5784038de4bd76fa2b9422dc1887cda0842087",
+      "sizeBytes": 1026,
+      "producedBy": "icare-dreps-export",
+      "description": "Copied source/context artifact for reproducible public lab evidence."
+    },
+    {
+      "id": "artifact.runtime-events",
+      "kind": "json",
+      "path": "runtime-events.json",
+      "mediaType": "application/json",
+      "sha256": "841e0a015ed448f8ddc81259e1af8459952f12b2d811d40e62e54946f690c19c",
+      "sizeBytes": 1449,
+      "producedBy": "icare-dreps-export",
+      "description": "Runtime events generated by the DREPS export."
+    },
+    {
+      "id": "artifact.runtime-events-ndjson",
+      "kind": "trace",
+      "path": "runtime-events.ndjson",
+      "mediaType": "application/x-ndjson",
+      "sha256": "711240e18ca94a48fd228a1d04dd6417c0407bcc55fb9e62976e08369c703620",
+      "sizeBytes": 1202,
+      "producedBy": "icare-dreps-export",
+      "description": "Runtime events in NDJSON form."
+    },
+    {
+      "id": "artifact.findings",
+      "kind": "json",
+      "path": "findings.json",
+      "mediaType": "application/json",
+      "sha256": "310475623cdf3a19d6e6a866a5c2152265e651d5351547b68f73fb2fa7e716cb",
+      "sizeBytes": 581,
+      "producedBy": "icare-dreps-export",
+      "description": "DREPS findings generated from the lab scenario."
+    },
+    {
+      "id": "artifact.control-mapping",
+      "kind": "json",
+      "path": "control-mapping.json",
+      "mediaType": "application/json",
+      "sha256": "4e5a58407211b78c15e222dc752018f5962730b1f3b3376d0411ae3ca342974d",
+      "sizeBytes": 896,
+      "producedBy": "icare-dreps-export",
+      "description": "Doctrine control mappings for the public lab."
+    },
+    {
+      "id": "artifact.lab-report",
+      "kind": "report",
+      "path": "report.md",
+      "mediaType": "text/markdown",
+      "sha256": "32809c5925df18b43742fbcc45b9c0a442d661129b465a4440011fa85b0ef6bd",
+      "sizeBytes": 594,
+      "producedBy": "icare-dreps-export",
+      "description": "Human-readable Markdown report."
+    },
+    {
+      "id": "artifact.lab-report-html",
+      "kind": "report",
+      "path": "report.html",
+      "mediaType": "text/html",
+      "sha256": "4d2568065078f4f913ce107982872fd4fea71b7821f44353e1a7f1ecd5233ace",
+      "sizeBytes": 571,
+      "producedBy": "icare-dreps-export",
+      "description": "Human-readable HTML report."
+    }
+  ],
+  "runtimeEvents": [
+    {
+      "id": "event.scenario.started",
+      "timestamp": "2026-01-01T00:00:00.000Z",
+      "scenarioId": "icare.beui2.udp.runtime-network-reference",
+      "type": "scenario.started",
+      "message": "Icare BEUI2 runtime network evidence export started.",
+      "metadata": {
+        "mode": "deterministic-example",
+        "branch": "feat/icare-native-dreps-export-v0",
+        "commit": "a7a0fc5683939d3c805e70471e3b6165d121a920"
+      }
+    },
+    {
+      "id": "event.artifacts.created",
+      "timestamp": "2026-01-01T00:00:00.000Z",
+      "scenarioId": "icare.beui2.udp.runtime-network-reference",
+      "type": "artifact.created",
+      "message": "Source/context artifacts were collected for the public DREPS export.",
+      "metadata": {
+        "copiedSourceArtifacts": 9
+      }
+    },
+    {
+      "id": "event.finding.evaluated",
+      "timestamp": "2026-01-01T00:00:00.000Z",
+      "scenarioId": "icare.beui2.udp.runtime-network-reference",
+      "type": "finding.evaluated",
+      "message": "BEUI2 UDP protocol risk hypothesis was evaluated as an educational lab finding.",
+      "metadata": {
+        "findingId": "BEUI2-NET-001",
+        "safetyScope": "local educational lab"
+      }
+    },
+    {
+      "id": "event.export.completed",
+      "timestamp": "2026-01-01T00:00:00.000Z",
+      "scenarioId": "icare.beui2.udp.runtime-network-reference",
+      "type": "export.completed",
+      "message": "DREPS evidence pack export completed.",
+      "metadata": {
+        "drepsVersion": "0.1.0"
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "BEUI2-NET-001",
+      "title": "UDP runtime protocol injection surface documented by the lab",
+      "status": "confirmed",
+      "severity": "medium",
+      "statement": "The lab documents a local UDP/protocol risk hypothesis suitable for controlled runtime observation and hardening discussion.",
+      "evidenceArtifactIds": [
+        "artifact.runtime-events",
+        "artifact.findings",
+        "artifact.lab-report"
+      ],
+      "recommendation": "Keep the exercise local, document naive versus hardened behavior, and export runtime evidence after each scenario run."
+    }
+  ],
+  "controlMappings": [
+    {
+      "controlId": "ICARE-DREPS-001",
+      "title": "Runtime scenario evidence is reproducible and exported",
+      "findingIds": [
+        "BEUI2-NET-001"
+      ],
+      "status": "mapped",
+      "rationale": "The lab exports runtime events, findings, reports and SHA-256 manifests in a DREPS-compatible structure."
+    },
+    {
+      "controlId": "ICARE-LAB-SAFETY-001",
+      "title": "Educational lab scope is explicit",
+      "findingIds": [
+        "BEUI2-NET-001"
+      ],
+      "status": "mapped",
+      "rationale": "The lab declares local-only, controlled and non-destructive boundaries."
+    },
+    {
+      "controlId": "ICARE-BOUNDARY-001",
+      "title": "Premium Doctrine features are excluded from the public lab",
+      "findingIds": [
+        "BEUI2-NET-001"
+      ],
+      "status": "mapped",
+      "rationale": "The lab exports evidence but leaves scoring, sealing, signing and WORM archive to Doctrine Platform."
+    }
+  ],
+  "doctrineExport": {
+    "format": "doctrine-runtime-evidence-pack",
+    "schemaVersion": "0.1.0",
+    "exportedAt": "2026-01-01T00:00:00.000Z",
+    "compatibilityTarget": "doctrine-platform/runtime-evidence-provider@0.1.0"
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "manifestPath": "SHA256SUMS",
+    "signed": false
+  }
+}

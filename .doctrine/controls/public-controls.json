@@ -1,0 +1,26 @@
+{
+  "kind": "icare-public-controls",
+  "version": "0.1.0",
+  "controls": [
+    {
+      "id": "ICARE-LAB-SAFETY-001",
+      "title": "Local educational safety scope is explicit",
+      "description": "The lab must remain local, controlled, non-destructive and educational."
+    },
+    {
+      "id": "ICARE-DREPS-001",
+      "title": "DREPS evidence pack is generated",
+      "description": "The lab must produce a valid evidence-pack.json consumable by Doctrine Platform."
+    },
+    {
+      "id": "ICARE-INTEGRITY-001",
+      "title": "Artifacts are hashed",
+      "description": "Every exported artifact must be referenced with a SHA-256 digest."
+    },
+    {
+      "id": "ICARE-BOUNDARY-001",
+      "title": "Premium Doctrine features remain out of scope",
+      "description": "The public lab must not claim official Doctrine certification, enterprise scoring, keyless signing or WORM archive enforcement."
+    }
+  ]
+}

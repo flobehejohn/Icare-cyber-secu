@@ -1,0 +1,29 @@
+[
+  {
+    "controlId": "ICARE-DREPS-001",
+    "title": "Runtime scenario evidence is reproducible and exported",
+    "findingIds": [
+      "BEUI2-NET-001"
+    ],
+    "status": "mapped",
+    "rationale": "The lab exports runtime events, findings, reports and SHA-256 manifests in a DREPS-compatible structure."
+  },
+  {
+    "controlId": "ICARE-LAB-SAFETY-001",
+    "title": "Educational lab scope is explicit",
+    "findingIds": [
+      "BEUI2-NET-001"
+    ],
+    "status": "mapped",
+    "rationale": "The lab declares local-only, controlled and non-destructive boundaries."
+  },
+  {
+    "controlId": "ICARE-BOUNDARY-001",
+    "title": "Premium Doctrine features are excluded from the public lab",
+    "findingIds": [
+      "BEUI2-NET-001"
+    ],
+    "status": "mapped",
+    "rationale": "The lab exports evidence but leaves scoring, sealing, signing and WORM archive to Doctrine Platform."
+  }
+]

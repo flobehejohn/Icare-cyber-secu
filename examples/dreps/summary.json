@@ -1,0 +1,17 @@
+{
+  "kind": "icare-dreps-export-summary",
+  "version": "0.1.0",
+  "status": "PASS",
+  "generatedAt": "2026-01-01T00:00:00.000Z",
+  "outDir": "examples/dreps",
+  "evidencePack": "examples/dreps/evidence-pack.json",
+  "findings": "examples/dreps/findings.json",
+  "runtimeEvents": "examples/dreps/runtime-events.json",
+  "manifest": "examples/dreps/SHA256SUMS",
+  "report": "examples/dreps/report.md",
+  "provider": "icare-sentinel-lab",
+  "scenario": "icare.beui2.udp.runtime-network-reference",
+  "artifactCount": 15,
+  "findingCount": 1,
+  "publicBoundary": "No official Doctrine certification, no enterprise scoring, no keyless signing and no WORM archive are performed by this public lab."
+}

@@ -1,0 +1,35 @@
+{
+  "labId": "icare-sentinel-lab",
+  "mode": "community",
+  "capabilities": {
+    "exportDreps": true,
+    "validateDreps": true,
+    "generateLocalReport": true,
+    "generateSha256Manifest": true,
+    "usePublicGoldenPaths": true,
+    "cleanRoomExport": true,
+    "technicalDebtProfiler": false,
+    "enterpriseScoring": false,
+    "officialDoctrineSeal": false,
+    "keylessSigning": false,
+    "wormArchive": false,
+    "multiLabDashboard": false
+  },
+  "commercialBoundary": {
+    "statement": "This public lab produces Doctrine-compatible runtime evidence. Premium scoring, official seal, keyless signature, WORM archive and multi-lab governance remain Doctrine Platform responsibilities.",
+    "allowedUse": [
+      "education",
+      "local lab audit",
+      "runtime evidence generation",
+      "case study production",
+      "Doctrine-compatible provider demonstration"
+    ],
+    "notIncluded": [
+      "official Doctrine certification",
+      "enterprise scoring",
+      "commercial seal",
+      "signed WORM archive",
+      "multi-client governance"
+    ]
+  }
+}
