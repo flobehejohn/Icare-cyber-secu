@@ -7,8 +7,8 @@
     "message": "Icare BEUI2 runtime network evidence export started.",
     "metadata": {
       "mode": "deterministic-example",
-      "branch": "feat/icare-native-dreps-export-v0",
-      "commit": "a7a0fc5683939d3c805e70471e3b6165d121a920"
+      "branch": "deterministic-branch",
+      "commit": "deterministic-commit"
     }
   },
   {
