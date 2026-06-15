@@ -105,6 +105,9 @@ const endedAt = isoNow();
 const currentCommit = execText("git rev-parse HEAD", "unknown");
 const currentBranch = execText("git rev-parse --abbrev-ref HEAD", "unknown");
 const remote = execText("git remote get-url origin", "unknown");
+const exportedCommit = deterministic ? "deterministic-commit" : currentCommit;
+const exportedBranch = deterministic ? "deterministic-branch" : currentBranch;
+const exportedRemote = deterministic ? "deterministic-remote" : remote;
 
 const candidateSources = [
   "README.md",
@@ -151,8 +154,8 @@ const runtimeEvents = [
     message: "Icare BEUI2 runtime network evidence export started.",
     metadata: {
       mode: deterministic ? "deterministic-example" : "local-export",
-      branch: currentBranch,
-      commit: currentCommit
+      branch: exportedBranch,
+      commit: exportedCommit
     }
   },
   {
@@ -372,9 +375,9 @@ const evidencePack = {
       node: process.version,
       hostname: deterministic ? "deterministic-host" : os.hostname(),
       git: {
-        remote,
-        branch: currentBranch,
-        commit: currentCommit
+        remote: exportedRemote,
+        branch: exportedBranch,
+        commit: exportedCommit
       },
       mode: deterministic ? "deterministic-example" : "local-export"
     }
